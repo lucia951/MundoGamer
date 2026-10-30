@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mundo Gamer</title>
+<style>
+:root{
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#eef3ff; --card:#ffffff; --text:#0b1630; --muted:#4a5a7d; --color:#0077d6; --color2:#c4007a;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0a0c1c; --card:#12162d; --text:#e8f0ff; --muted:#9aa8cf; --color:#19f0ff; --color2:#ff2bd6;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0a0c1c; --card:#12162d; --text:#e8f0ff; --muted:#9aa8cf; --color:#19f0ff; --color2:#ff2bd6;
+}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:2px solid var(--color);padding:12px;text-align:center;z-index:11}
+nav a{color:var(--text);text-decoration:none;font-weight:bold;margin:0 8px;display:inline-block}
+nav a:hover{color:var(--color)}
+header{text-align:center;padding:50px 20px;background:linear-gradient(var(--card),var(--bg))}
+header .emoji{font-size:5rem}
+h1{color:var(--color);font-size:2.6rem;margin:10px 0;text-shadow:3px 3px 0 var(--color2)}
+section{max-width:900px;margin:auto;padding:30px 20px}
+h2{color:var(--color);border-bottom:2px solid var(--color2);padding-bottom:6px}
+.caja{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--color);border-radius:10px;padding:16px}
+.card h3{margin:0 0 6px;color:var(--color2)}
+table{width:100%;border-collapse:collapse;background:var(--card)}
+th,td{padding:10px;text-align:left;border-bottom:1px solid var(--muted)}
+details{background:var(--card);border-left:4px solid var(--color);padding:10px 14px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:bold}
+footer{text-align:center;padding:24px;color:var(--muted);border-top:2px solid var(--color)}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#generos">Géneros</a>
+  <a href="#plataformas">Plataformas</a>
+  <a href="#historia">Historia</a>
+  <a href="#top">Top juegos</a>
+  <a href="#curiosidades">Curiosidades</a>
+  <a href="#preguntas">Preguntas</a>
+</nav>
+
+<header>
+  <div class="emoji">🎮</div>
+  <h1>MUNDO GAMER</h1>
+  <p>Todo sobre videojuegos: géneros, plataformas, historia y mucho más.</p>
+</header>
+
+<section id="generos">
+  <h2>Géneros</h2>
+  <div class="caja">
+    <div class="card"><h3>⚔️ Acción y aventura</h3>Exploración y combate. Ej.: Zelda.</div>
+    <div class="card"><h3>🧙 RPG</h3>Personajes que evolucionan. Ej.: Final Fantasy.</div>
+    <div class="card"><h3>🔫 Shooter</h3>Puntería y reflejos. Ej.: Call of Duty.</div>
+    <div class="card"><h3>🧠 Estrategia</h3>Planificar y gestionar. Ej.: Age of Empires.</div>
+    <div class="card"><h3>🏎️ Carreras</h3>Velocidad y precisión. Ej.: Mario Kart.</div>
+    <div class="card"><h3>⚽ Deportes</h3>Fútbol, baloncesto y más. Ej.: EA Sports FC.</div>
+  </div>
+</section>
+
+<section id="plataformas">
+  <h2>Plataformas</h2>
+  <div class="caja">
+    <div class="card"><h3>🖥️ PC</h3>Potente y personalizable. Tiendas: Steam, Epic, GOG. Juegos: Counter-Strike 2, Baldur’s Gate 3.</div>
+    <div class="card"><h3>🎮 PlayStation</h3>Sony. Actual: PS5 (2020). Grandes exclusivas: God of War, Spider-Man 2.</div>
+    <div class="card"><h3>🟢 Xbox</h3>Microsoft. Actual: Series X|S (2020). Incluye Game Pass. Juegos: Halo, Forza Horizon.</div>
+    <div class="card"><h3>🍄 Nintendo</h3>Switch (2017) y Switch 2 (2025). Ideal en familia: Mario Kart, Zelda, Pokémon.</div>
+    <div class="card"><h3>📱 Móvil</h3>iOS y Android. Muchos juegos gratis: Candy Crush, Clash Royale, Among Us.</div>
+  </div>
+</section>
+
+<section id="historia">
+  <h2>Historia</h2>
+  <ul>
+    <li><b>1972:</b> Pong, de Atari, llega a los salones recreativos.</li>
+    <li><b>1980:</b> Pac-Man se convierte en un fenómeno mundial.</li>
+    <li><b>1985:</b> Super Mario Bros. llega con la NES.</li>
+    <li><b>1998:</b> Zelda: Ocarina of Time redefine los juegos 3D.</li>
+    <li><b>2007:</b> Los smartphones traen los juegos móviles.</li>
+    <li><b>2017:</b> Nintendo Switch une sobremesa y portátil.</li>
+  </ul>
+</section>
+
+<section id="top">
+  <h2>Juegos que hicieron historia</h2>
+  <table>
+    <tr><th>Juego</th><th>Año</th><th>Género</th></tr>
+    <tr><td>Minecraft</td><td>2011</td><td>Sandbox</td></tr>
+    <tr><td>Grand Theft Auto V</td><td>2013</td><td>Acción</td></tr>
+    <tr><td>Wii Sports</td><td>2006</td><td>Deportes</td></tr>
+    <tr><td>Super Mario Bros.</td><td>1985</td><td>Plataformas</td></tr>
+    <tr><td>The Witcher 3</td><td>2015</td><td>RPG</td></tr>
+  </table>
+</section>
+
+<section id="curiosidades">
+  <h2>Curiosidades</h2>
+  <div class="caja">
+    <div class="card"><h3>🎾 El primero</h3>Tennis for Two (1958) es uno de los primeros videojuegos.</div>
+    <div class="card"><h3>🟡 Pac-Man</h3>Su nombre viene de «paku-paku», el sonido de comer en japonés.</div>
+    <div class="card"><h3>🍄 Mario</h3>Antes se llamaba Jumpman.</div>
+    <div class="card"><h3>🏟️ Esports</h3>Los torneos llenan estadios enteros.</div>
+  </div>
+</section>
+
+<section id="preguntas">
+  <h2>Preguntas frecuentes</h2>
+  <details><summary>¿Qué plataforma me conviene?</summary>PC para personalizar, consola para jugar sin complicaciones y móvil para empezar gratis.</details>
+  <details><summary>¿Qué es un juego indie?</summary>Un juego hecho por un estudio pequeño o una sola persona.</details>
+  <details><summary>¿Qué son los esports?</summary>Competiciones profesionales de videojuegos con equipos y premios.</details>
+</section>
+
+<footer>MUNDO GAMER · HECHO PARA JUGADORES</footer>
+
+</body>
+</html>
